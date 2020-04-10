@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'Futura_bold';
-    src: url('font/Futura-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap');
 
 #conteneur
 {
@@ -19,7 +13,7 @@ body
 .prim
 {
   
-  font-family: 'Futura_bold';
+  font-family: 'Open sans';
     font-size: 20px;
     color: white;
     text-align: left;
@@ -29,7 +23,7 @@ body
 .primlower
 {
   
-  font-family: 'Futura_bold';
+  font-family: 'Open sans';
     font-size: 13px;
     color: white;
     text-align: left;
@@ -39,7 +33,7 @@ body
 .primbis
 {
   
-  font-family: 'Futura_bold';
+  font-family: 'Open sans';
     font-size: 20px;
     color: white;
     
@@ -49,7 +43,7 @@ body
 .sec
 {
     
-    font-family: 'Futura_bold';
+    font-family: 'Open sans';
     font-size: 20px;
     color: black;
     text-align: right;
@@ -59,7 +53,7 @@ body
 .tierce
 {
     
-    font-family: 'Futura_bold';
+    font-family: 'Open sans';
     font-size: 30px;
     color: white;
     text-align: left;
@@ -69,12 +63,13 @@ body
 .quatro
 {
     
-    font-family: 'Futura_bold';
+    font-family: 'Open sans';
     font-size: 14px;
     color: white;
     text-align:center;
     
 }
+
 
 .imd
 {
@@ -115,12 +110,10 @@ body
         transition: 0.3s;
       }
 
-      /* When you mouse over the navigation links, change their color */
       .sidebar a:hover {
         color: #f1f1f1;
       }
 
-      /* Position and style the close button (top right corner) */
       .sidebar .closebtn {
         position: absolute;
         top: 0;
@@ -129,7 +122,6 @@ body
         margin-left: 50px;
       }
 
-      /* The button used to open the sidebar */
       .openbtn {
         font-size: 20px;
         cursor: pointer;
@@ -143,13 +135,11 @@ body
         background-color: #444;
       }
 
-      /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
       #main {
-        transition: margin-left .5s; /* If you want a transition effect */
+        transition: margin-left .5s;
         padding: 20px;
       }
 
-      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
       @media screen and (max-height: 450px) {
         .sidebar {padding-top: 15px;}
         .sidebar a {font-size: 18px;}
@@ -161,10 +151,9 @@ body
   width: 300px;
   height: 300px;
   border: 10px solid #ff00;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
+  perspective: 1000px; }
 
-/* This container is needed to position the front and back side */
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -174,27 +163,23 @@ body
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; 
   backface-visibility: hidden;
 }
 
-/* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #000;
   color: black;
 }
 
-/* Style the back side */
 .flip-card-back {
   
   background-color: transparent;
